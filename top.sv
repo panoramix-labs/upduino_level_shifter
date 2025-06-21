@@ -1,44 +1,44 @@
 
-kmodule top (
-	output PIN_3V3_0,
-	input  PIN_VIO_0,
+module top (
+  input  PIN_3V3_31,
+  output PIN_VIO_44,
 
-	input  PIN_3V3_1,
-	output PIN_VIO_1,
+  output PIN_3V3_37,
+  input  PIN_VIO_4,
 
-	output PIN_3V3_2,
-	input  PIN_VIO_2,
+  input  PIN_3V3_34,
+  output PIN_VIO_3,
 
-	input  PIN_3V3_3,
-	output PIN_VIO_3,
+  output PIN_3V3_43,
+  input  PIN_VIO_48,
 
-	output PIN_3V3_4,
-	input  PIN_VIO_4,
+  input  PIN_3V3_36,
+  output PIN_VIO_45,
 
-	input  PIN_3V3_5,
-	output PIN_VIO_5,
+  output PIN_3V3_42,
+  input  PIN_VIO_47,
 
-	output PIN_3V3_6,
-	input  PIN_VIO_6,
+  input  PIN_3V3_38,
+  output PIN_VIO_46,
 
-	input  PIN_3V3_7,
-	output PIN_VIO_7,
+  output PIN_3V3_28,
+  input  PIN_VIO_2,
 );
 
   /* UART 0 */
-  assign PIN_3V3_0 = PIN_VIO_0; /* 3V3 => VIO */
-  assign PIN_VIO_1 = PIN_3V3_1; /* 3V3 <= VIO */
+  assign PIN_VIO_44 = PIN_3V3_31;
+  assign PIN_3V3_37 = PIN_VIO_4;
 
   /* UART 1 */
-  assign PIN_3V3_2 = PIN_VIO_2; /* 3V3 => VIO */
-  assign PIN_VIO_3 = PIN_3V3_3; /* 3V3 <= VIO */
+  assign PIN_VIO_3  = PIN_3V3_34;
+  assign PIN_3V3_43 = PIN_VIO_48;
 
   /* UART 2 */
-  assign PIN_3V3_4 = PIN_VIO_4; /* 3V3 => VIO */
-  assign PIN_VIO_5 = PIN_3V3_5; /* 3V3 <= VIO */
+  assign PIN_VIO_45 = PIN_3V3_36;
+  assign PIN_3V3_42 = PIN_VIO_47;
 
   /* UART 3 */
-  assign PIN_3V3_6 = PIN_VIO_6; /* 3V3 => VIO */
-  assign PIN_VIO_7 = PIN_3V3_7; /* 3V3 <= VIO */
+  assign PIN_VIO_46 = PIN_3V3_38;
+  assign PIN_3V3_28 = PIN_VIO_2;
 
 endmodule
