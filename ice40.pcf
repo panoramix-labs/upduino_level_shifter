@@ -1,0 +1,21 @@
+set_io -nowarn LED_G	39 # active-low
+set_io -nowarn LED_B	40 # active-low
+set_io -nowarn LED_R	41 # active-low
+
+set_io PIN_3V3_0	31
+set_io PIN_3V3_1	37
+set_io PIN_3V3_2	34
+set_io PIN_3V3_3	43
+set_io PIN_3V3_4	36
+set_io PIN_3V3_5	42
+set_io PIN_3V3_6	38
+set_io PIN_3V3_7	28
+
+set_io PIN_VIO_0	44
+set_io PIN_VIO_1	4
+set_io PIN_VIO_2	3
+set_io PIN_VIO_3	48
+set_io PIN_VIO_4	45
+set_io PIN_VIO_5	47
+set_io PIN_VIO_6	46
+set_io PIN_VIO_7	2
